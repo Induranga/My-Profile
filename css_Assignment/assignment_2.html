@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web Layout - Assignment 2</title>
+    <meta content="IJSE, CMJD, Basic Web Layout, RWAD" name="keywords">
+    <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
+    <meta content="Institute of Software Engineering" name="author">
+    <meta content="Institute of Software Engineering" name="owner">
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="../assets/css/fonts/css/all.css" rel="stylesheet">
+
+
+    <style>
+        header {
+            position: relative;
+            height: 80px;
+            box-shadow: 0px 0px 20px -10px #1d1c1c;
+        }
+
+        header > img {
+            width: 215px;
+            margin: 25px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            font-size: 22px;
+            font-family: 'Lobster', cursive;
+            list-style: none;
+        }
+
+        header > ul > li {
+            padding-left: 10px;
+            display: inline-block;
+        }
+
+        header > ul > li:hover {
+            cursor: pointer;
+            color: #30ea08;
+
+        }
+
+        /*body */
+        body > main {
+            position: relative;
+        }
+
+        main > nav {
+            width: 250px;
+            background-color: rgb(34, 76, 203);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            color: white;
+        }
+
+
+        main > nav > ul {
+            /*reset list style*/
+            position: fixed;
+            list-style: none;
+            font-size: 22px;
+            margin-top: 49px;
+
+        }
+
+        main > nav > ul > li {
+            /*reset list style*/
+            padding-bottom: 24px;
+            font-family: "Microsoft JhengHei UI Light";
+
+        }
+
+        main > nav > ul > li > a {
+            /*reset list style*/
+            text-decoration: none;
+            color: #eeeeee;
+            margin-left: 30px;
+            padding-bottom: 4px;
+
+
+        }
+
+        main > nav > ul > li > a:hover {
+
+            color: #30ea08;
+            font-size: 30px;
+            font-family: "Droid Sans Mono";
+            font-style: initial;
+            margin-left: 40px;
+        }
+
+        main > section {
+            margin-left: 280px;
+            padding-top: 10px;
+            margin-bottom: -16px;;
+
+        }
+
+        main > section > section {
+
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            position: absolute;
+            border-left: 15px;
+
+            height: 100%;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+            background-image: url("assets/images/1.jpg");
+            background-size: cover;
+
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+            background-image: url("assets/images/3.jpg");
+            background-size: cover;
+
+        }
+
+        main > section > section > div:nth-child(3) {
+            right: 0;
+            background-image: url("assets/images/2.jpg");
+            background-size: cover;
+        }
+
+        body > footer > p {
+            text-align: center;
+
+        }
+
+        body > footer {
+            height: 50px;
+            background-color: #b8b8b8;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img alt="ijse logo" src="assets/images/ijselogo.png">
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut dolores eaque facere minima. Asperiores
+            cum deserunt, dicta doloremque doloribus fugit incidunt minima omnis qui soluta unde voluptatem voluptates.
+            Aspernatur.</p>
+        <p>Blanditiis illo ipsa nulla quidem reprehenderit sint vel. Accusantium dolores doloribus eos eveniet expedita
+            fuga laudantium minus molestiae placeat quasi repellat, repellendus vero! Ab delectus laboriosam
+            perspiciatis similique ullam voluptates?</p>
+        <p>Architecto corporis dignissimos enim explicabo ipsum modi necessitatibus quam recusandae ullam vel? At,
+            dolore ea exercitationem fugiat id laborum modi molestiae odio qui quisquam repellat sunt temporibus ullam
+            unde voluptas!</p>
+        <p>Illo in obcaecati rem suscipit voluptas! Accusamus dolorum, ducimus eligendi error fugit ipsam odit
+            recusandae vitae voluptatibus! Debitis distinctio dolore minus quo recusandae reiciendis rem rerum tempore,
+            unde voluptatem. Cupiditate.</p>
+        <p>Assumenda at autem consequuntur doloremque maiores, nihil officia perspiciatis quae quaerat quibusdam quis,
+            quos. A, atque distinctio, dolorum explicabo illum iste numquam odio perferendis perspiciatis quam saepe
+            temporibus voluptatem voluptatibus.</p>
+        <p>Aspernatur atque consectetur consequuntur distinctio dolorem doloremque dolorum eligendi esse et explicabo
+            fugiat fugit laborum libero, magnam nobis officiis perspiciatis possimus quae quas reiciendis! Asperiores
+            fuga magni nisi perspiciatis sequi?</p>
+        <p>Architecto, delectus itaque laboriosam laudantium modi molestias officia recusandae voluptates. Animi
+            aspernatur debitis delectus, doloremque eos error facilis fugit ipsa, neque sapiente sunt tenetur, velit
+            veritatis? Aut distinctio laborum unde.</p>
+        <p>Architecto aspernatur at consectetur cum deserunt error et exercitationem, hic laborum laudantium, molestiae
+            natus odit officia quaerat quis rem sequi sint suscipit velit vero voluptate voluptatibus voluptatum.
+            Dolore, non quam.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam dolorum excepturi libero nam perferendis
+            quae quo ratione reprehenderit veritatis! At, aut commodi corporis dolore eius iure laborum libero
+            officia!</p>
+        <p>Ab adipisci aliquid consequuntur dolorem eaque fugit impedit molestiae, mollitia natus quia repudiandae ut
+            veritatis voluptate. Ad animi, aperiam dolorum et illum incidunt, ipsa libero modi, obcaecati quaerat
+            reiciendis tenetur!</p>
+        <p>Aperiam consectetur doloremque ducimus ex harum maxime, similique voluptas? At ipsam possimus praesentium
+            sit. Assumenda dolor repellendus sunt. Architecto, atque eum fugit inventore iste laborum odit quasi qui
+            soluta vitae.</p>
+        <p>Asperiores modi quisquam reprehenderit, sint tempora voluptatum! Corporis dignissimos dolore earum esse
+            facilis fuga id ipsa ipsam libero, nihil nisi odio perspiciatis placeat quia suscipit tenetur voluptatibus
+            voluptatum. Facilis, rerum!</p>
+        <p>Ad corporis ea eaque earum enim illum quam. Architecto at aut culpa ea illo impedit natus neque numquam
+            officiis quae repellendus suscipit unde velit, veritatis voluptatibus! Alias consequuntur ipsum sint.</p>
+        <p>Ab adipisci assumenda autem beatae cum delectus deleniti dignissimos doloremque est itaque iusto laudantium
+            magnam modi molestiae nemo placeat possimus ratione rem repudiandae rerum sed, sit tenetur totam voluptas
+            voluptatem!</p>
+        <p>Doloribus illum nemo, quisquam saepe similique totam voluptates. Aliquid aperiam blanditiis, commodi dicta
+            dignissimos distinctio dolores eligendi est, et facilis id, laudantium nemo nulla odit praesentium quam sint
+            tempore. Consequuntur.</p>
+        <p>Aperiam architecto consectetur cum impedit laudantium neque omnis quibusdam quos repudiandae temporibus.
+            Animi debitis in nesciunt nobis optio quibusdam tenetur vel? Beatae delectus earum esse iure, laborum
+            placeat quaerat quos.</p>
+        <p>Accusantium alias aperiam culpa, cumque, exercitationem ipsam itaque maiores praesentium provident quas
+            repellat similique sint, totam. Animi consequuntur incidunt libero molestias. Ab alias dolores eaque illum
+            omnis, repellat sapiente sint.</p>
+        <p>A aperiam corporis, cum enim, hic in ipsam molestias neque numquam odit officiis quia, quibusdam
+            reprehenderit sed voluptates! Commodi consectetur eligendi illum impedit nam nostrum pariatur provident
+            quaerat quidem velit.</p>
+    </section>
+
+
+</main>
+
+<footer>
+
+    <p>Developed By IJSE</p>
+</footer>
+</body>
+</html>
