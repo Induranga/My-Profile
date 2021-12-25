@@ -1,35 +1,109 @@
 <html>
 <head>
+    <link href="asserts/css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
 
+    <style>
+        body>header {
+
+            height: 55px;
+            width: 100%;
+            top: 3px;
+            /* margin-top: 10px;*/
+
+            box-shadow: -2px 7px 8px -4px #917a7a;
+            background-color: rgba(151, 144, 144, 0.43);
+            position: fixed;
+            z-index: 10000;
+
+        }
+        body>header>ul{
+            bottom: 0;
+            right: 20px;
+            font-size: 20px;
+            list-style: none;
+            color: #04042a;
+            position: absolute;
+
+        }
+        body> header > ul > li {
+            padding: 0 7px 0 5px;
+            display: inline-block;
+
+        }
+        body> header > ul > li>a {
+
+            text-decoration: none;
+            color: #3e3a3a;
+            padding-bottom: 7px;
+            margin-left: 8px;
+
+        }
+        body> header > ul > li>a:hover {
+            color: orange;
+
+        }
+
+        body>main>section>{
+            position: relative;
+        }
+        body>main>section>article:nth-child(1){
+            top: 246px;
+            left: 146px;
+            position: absolute;
+            color: red;
+            font-size: 27px;
+        } body>main>section>article:nth-child(2){
+
+                      top: 322px;
+                      left: 222px;
+                      font-size: 24px;
+                      position: absolute;
+                      right: 26px;
+        }
+        body>main>section>article:nth-child(1)>h3{
+
+            font-family: 'Redressed', cursive;
+        }
+    </style>
 </head>
-<style>
 
-</style>
 <body>
 
 <header>
 
-    <nav>
-        <img alt="My Logo" src="">
-        <a href="index.html">Home</a>
-        <a href="aboutMe.html">About</a>
-        <a href="Professional.html">Professional</a>
-        <a href="education.html">Education</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="aboutMe.html">About</a>
+        </li>
+
+        <li><a href="Professional.html">Professional</a>
+        </li>
+        <li>
+            <a href="education.html">Education</a>
+        </li>
+
+        <li><a href="Projects.html">Projects</a>
+        </li>
+
+        <li><a href="Gallery.html">Gallery</a>
+        </li>
+
+        <li><a href="Contact.html">Contact</a>
+        </li>
+    </ul>
 
 </header>
 
 <main>
 
     <section>
-        <seccion>
-            <br>
-            <br>
-            <pre><h3>Who I'm</h3></pre>
 
+            <article><h3>Who I'm</h3></article>
             <article>
                 I am a full-stack developer, I have been training for two years with <a
                     href="https://www.ijse.lk/">IJSE</a> for software Engineering,<br>
@@ -37,10 +111,6 @@
                 frameworks. <br>
                 contact me for the service if you need any creative work in these areas .
             </article>
-
-
-        </seccion>
-
 
     </section>
 </main>

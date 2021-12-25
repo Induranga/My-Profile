@@ -13,26 +13,40 @@
         body>header {
             height: 55px;
             width: 100%;
+            top: 3px;
            /* margin-top: 10px;*/
 
             box-shadow: -2px 7px 8px -4px #917a7a;
-            background-color: rgba(224, 216, 216, 0.43);
+            background-color: rgba(151, 144, 144, 0.43);
             position: fixed;
             z-index: 10000;
         }
 
         body>header>ul{
             bottom: 0;
-            right: 30px;
+            right: 20px;
             font-size: 20px;
             list-style: none;
-            color: #4a3a3a;
+            color: #04042a;
             position: absolute;
 
         }
         body> header > ul > li {
-            padding: 0 10px 0 10px;
+            padding: 0 7px 0 5px;
             display: inline-block;
+
+        }
+        body> header > ul > li>a {
+
+                      text-decoration: none;
+                      color: #3e3a3a;
+                      padding-bottom: 7px;
+                      margin-left: 8px;
+
+        }
+
+        body> header > ul > li>a:hover {
+            color: orange;
 
         }
 
@@ -41,6 +55,7 @@
             position: absolute;
             bottom: 200px;
             left: 40px;
+            z-index: 10000;
         }
 
 
@@ -49,8 +64,22 @@
             font-family: 'Oleo Script', cursive;
             font-size: 40px;
 
-        }  main>section>aside>h2 {
+        }
+        main>section>aside>h2 {
                        font-family: 'Roboto Mono', monospace;
+        }
+        body>main>section:nth-child(2){
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url("asserts/images/myImages/1.png");
+            background-size: cover;
+            z-index: 0;
+
         }
 
 
@@ -94,9 +123,10 @@
             <h2>Full-Stack Developer</h2>
 
         </aside>
-        <section>
 
-        </section>
+
+    </section>
+    <section>
 
     </section>
 
