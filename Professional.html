@@ -1,5 +1,119 @@
 <html>
 <head>
+    <link href="asserts/css/normalize.css" rel="stylesheet">
+    <style>
+        body > header {
+
+            height: 55px;
+            width: 100%;
+            top: 3px;
+            /* margin-top: 10px;*/
+
+            box-shadow: -2px 7px 8px -4px #917a7a;
+            background-color: rgba(151, 144, 144, 0.43);
+            position: fixed;
+            z-index: 10000;
+
+        }
+
+        body > header > ul {
+            bottom: 0;
+            right: 20px;
+            font-size: 20px;
+            list-style: none;
+            color: #04042a;
+            position: absolute;
+
+        }
+
+        body > header > ul > li {
+            padding: 0 7px 0 5px;
+            display: inline-block;
+
+        }
+
+        body > header > ul > li > a {
+
+            text-decoration: none;
+            color: #3e3a3a;
+            padding-bottom: 7px;
+            margin-left: 8px;
+
+        }
+
+        body > header > ul > li > a:hover {
+            color: orange;
+        }
+
+        body > main > section {
+
+            height: 1200px;
+            position: relative;
+
+        }
+
+        body > main > section > :nth-child(1) {
+
+            position: relative;
+
+
+        }
+
+        body > main > section:nth-child(2) {
+            position: relative;
+
+
+        }
+
+        body > main > section:nth-child(1) > section:nth-child(1) {
+            position: absolute;
+            top: 101px;
+            z-index: 1000;
+
+        }
+
+        body > main > section:nth-child(1) > section:nth-child(2) {
+            position: absolute;
+            top: 182px;
+            z-index: 1000;
+        }
+
+        body > main > section:nth-child(1) > section:nth-child(3) {
+            position: absolute;
+            top: 782px;
+            z-index: 1000;
+        }
+
+        body > main > section:nth-child(1) > section:nth-child(4) {
+            position: sticky;
+            height: 790px;
+            width: 100%;
+            top: 0;
+            background-image: url("asserts/images/BGImage/professionalBG1.jpg");
+            z-index: 0;
+        }
+
+        body > main > section:nth-child(2)>section{
+            position: sticky;
+            height: 790px;
+            width: 100%;
+            top: 0;
+            background-image: url("asserts/images/BGImage/professionalBG2.jpg");
+            z-index: 0;
+
+        }
+        body > main > section:nth-child(2)>article{
+            position: absolute;
+            z-index: 10000;
+
+        }
+        body > main > section:nth-child(2)>aside{
+            position: absolute;
+            z-index: 10000;
+
+        }
+
+    </style>
 
 
 </head>
@@ -7,30 +121,43 @@
 <body>
 <header>
 
-    <nav>
-        <img alt=" My Logo" src="">
-        <a href="index.html">Home</a>
-        <a href="aboutMe.html">About</a>
-        <a href="Professional.html">Professional</a>
-        <a href="education.html">Education</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
+    <ul>
 
-    </nav>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="aboutMe.html">About</a>
+        </li>
+
+        <li><a href="Professional.html">Professional</a>
+        </li>
+        <li>
+            <a href="education.html">Education</a>
+        </li>
+
+        <li><a href="Projects.html">Projects</a>
+        </li>
+
+        <li><a href="Gallery.html">Gallery</a>
+        </li>
+
+        <li><a href="Contact.html">Contact</a>
+        </li>
+    </ul>
 
 </header>
 
 <main>
+
     <section>
+        <section><h1>PROFESSIONAL</h1></section>
+
         <section>
-            <h1>PROFESSIONAL</h1>
             <H2>Tecnology I'm Working</H2>
             <section>
-                <img src="asserts/images/icons/hibernate.png" width="250" border="1" alt="Hibernate">
-                <img src="asserts/images/icons/java.png" width="350" border="3" alt="Java">
-                <img src="asserts/images/icons/html.png" width="150" border="1" alt="HTML">
-                <img src="asserts/images/icons/sql.png" width="150" border="1" alt="SQL">
+                <img alt="Hibernate" border="1" src="asserts/images/icons/hibernatecopy.png" width="250">
+                <img alt="Java" border="3" src="asserts/images/icons/javacopy.png" width="350">
+                <img alt="HTML" border="1" src="asserts/images/icons/htmlCopy.png" width="150">
+                <img alt="SQL" border="1" src="asserts/images/icons/sqlCopy.png" width="150">
                 <br>
             </section>
         </section>
@@ -38,23 +165,32 @@
         <section>
             <h2>Desining Software I'm Use</h2>
             <section>
-                <img src="asserts/images/icons/illustrator.png" width="200" border="1" alt="illustrator">
-                <img src="asserts/images/icons/photoshop.png" width="300" border="2" alt="photoshop">
+                <img alt="illustrator" border="1" src="asserts/images/icons/illustrator.png" width="200">
+                <img alt="photoshop" border="2" src="asserts/images/icons/photoshop.png" width="300">
             </section>
+
         </section>
 
         <section>
-        <h1>MY KNOWLAGE LEVEL IN PROGRAMMING LANGUAGE</h1>
-            <aside>
-                <a href="https://www.java.com/en/">JAVA</a><br>
-                <a href="https://www.mysql.com/">SQL</a><br>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML </a><br>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">CSS</a><br>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">JavaScript</a><br>
-            </aside>
+
         </section>
 
     </section>
+
+    <section>
+        <section></section>
+
+        <article><h2>MY KNOWLAGE LEVEL IN PROGRAMMING LANGUAGE</h2></article>
+        <aside>
+            <a href="https://www.java.com/en/">JAVA</a><br>
+            <a href="https://www.mysql.com/">SQL</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML </a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">CSS</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">JavaScript</a><br>
+        </aside>
+
+    </section>
+
 </main>
 
 
