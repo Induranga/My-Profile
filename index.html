@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link href="asserts/css/normalize.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet"><style>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Roboto+Mono:wght@200&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <style>
 
 
-        body>header {
-            height: 55px;
+        body > header {
+            height: 45px;
             width: 100%;
-            top: 3px;
-           /* margin-top: 10px;*/
+            top: 10px;
+            /* margin-top: 10px;*/
 
             box-shadow: -2px 7px 8px -4px #917a7a;
             background-color: rgba(151, 144, 144, 0.43);
@@ -22,8 +27,8 @@
             z-index: 10000;
         }
 
-        body>header>ul{
-            bottom: 0;
+        body > header > ul {
+            top: -9px;
             right: 20px;
             font-size: 20px;
             list-style: none;
@@ -31,59 +36,183 @@
             position: absolute;
 
         }
-        body> header > ul > li {
+
+        body > header > ul > li {
             padding: 0 7px 0 5px;
             display: inline-block;
 
         }
-        body> header > ul > li>a {
 
-                      text-decoration: none;
-                      color: #3e3a3a;
-                      padding-bottom: 7px;
-                      margin-left: 8px;
+        body > header > ul > li > a {
 
-        }
-
-        body> header > ul > li>a:hover {
-            color: orange;
+            text-decoration: none;
+            color: #3e3a3a;
+            padding-bottom: 7px;
+            margin-left: 8px;
 
         }
 
+        body > header > ul > li > a:hover {
+            color: #08ff00;
 
-        main>section>aside{
+        }
+
+        body > main > section {
+            height: 755px;
+            border: 1px solid red;
+
+        }
+
+        body > main > section:nth-child(1) {
+
+            background-color: rgba(200, 205, 212, 0.89);
+            position: relative;
+        }
+
+        body > main > section:nth-child(1) > aside {
             position: absolute;
             bottom: 200px;
-            left: 40px;
+            left: 50px;
             z-index: 10000;
         }
 
-
-        main>section>aside>h1 {
-         /* !*  font-family: 'Oleo Script', cursive;*!*/
+        body > main > section:nth-child(1) > aside > h1 {
             font-family: 'Oleo Script', cursive;
-            font-size: 40px;
+            font-size: 60px;
+            /*font-weight:initial ;*/
 
         }
-        main>section>aside>h2 {
-                       font-family: 'Roboto Mono', monospace;
+
+        body > main > section:nth-child(1) > aside > h2 {
+
+            font-family: 'Roboto Mono', monospace;
+
         }
-        body>main>section:nth-child(2){
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
+
+        body > main > section:nth-child(1) > section {
+            height: 768px;
+            width: 740px;
+            right: 5px;
             bottom: 0;
-            background-image: url("asserts/images/myImages/1.png");
+            position: absolute;
+            background-image: url("asserts/images/myImages/myImgeHomepage.png");
             background-size: cover;
-            z-index: 0;
+            z-index: 1000;
+            opacity: 95%;
+        }
+
+        /*about me*/
+        body > main > section:nth-child(2) {
+            background-color: #dbdbdb;
+            position: relative;
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(1) {
+
+            top: 246px;
+            left: 146px;
+            position: absolute;
+            color: red;
+            font-size: 27px;
+
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(1) > h3 {
+
+            font-family: 'Redressed', cursive;
+
+
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(2) {
+
+            top: 322px;
+            left: 222px;
+            font-size: 24px;
+            position: absolute;
+            right: 26px;
+
+        }
+
+        body > main > section:nth-child(2) > div {
+            position: absolute;
+            right: 0px;
+            top: 440px;
+            bottom: 0;
+            left: 661px;
+
+
+        }
+
+        body > main > section:nth-child(2) > div > button {
+            height: 35px;
+            width: 200px;
+            box-shadow: 2px 1px 5px 1px #0ee3b1;
+            border-style: ridge;
+
 
         }
 
 
-      
+        /*my professional*/
+        body > main > section:nth-child(3) {
+            height: 1200px;
+            position: relative;
+            background-color: #24243d;
+
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(1) {
+            position: absolute;
+            top: 75px;
+            left: 71px;
+            position: absolute;
+            z-index: 1000;
+
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(2) {
+
+            position: absolute;
+            top: 167px;
+            left: 68px;
+            z-index: 1000;
+
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) {
+            position: absolute;
+            top: 524px;
+            z-index: 1000;
+
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(4) {
+            position: sticky;
+            height: 790px;
+            width: 100%;
+            top: 0;
+            background-image: url("asserts/images/BGImage/professionalBG1.jpg");
+            z-index: 0;
+            opacity: 50%;
+
+
+        }
+
+        body > main > section:nth-child(4) {
+            height: 600px;
+            position: relative;
+            background-color: #27272b;
+        }
+
+        body > main > section:nth-child(4)>section {
+
+            height: 600px;
+            background-image: url("asserts/images/BGImage/professionalBG2.jpg");
+            background-size: cover;
+            opacity: 50%;
+        }
+
 
     </style>
 
@@ -116,19 +245,89 @@
 </header>
 
 <main>
+    <!--home start-->
     <section>
+
 
         <aside>
             <h1>I'm Sumudu Induranga</h1>
             <h2>Full-Stack Developer</h2>
+            <h2>Designer</h2>
 
         </aside>
 
 
+        <section>
+        </section>
     </section>
+    <!------------home page end------------------->
+
+    <!--about me-->
     <section>
 
+        <article><h3>Who I'm</h3></article>
+        <article>
+            I am a full-stack developer, I have been training for two years with <a
+                href="https://www.ijse.lk/">IJSE</a> for software Engineering,<br>
+            I also have knowlage of web development, graphic design <b>UI/ UX</b> designng , database management and br
+            frameworks. <br>
+            contact me for the service if you need any creative work in these areas .
+        </article>
+
+        <div>
+            <button>Download</button>
+        </div>
+
     </section>
+    <!--about me end -------->
+
+    <!--My professional -------->
+
+    <section>
+
+        <section><h1>PROFESSIONAL</h1></section>
+
+        <section>
+            <H2>Tecnology I'm Working</H2>
+            <section>
+                <img alt="Hibernate" border="1" src="asserts/images/icons/hibernatecopy.png" width="250">
+                <img alt="Java" border="3" src="asserts/images/icons/javacopy.png" width="350">
+                <img alt="HTML" border="1" src="asserts/images/icons/htmlCopy.png" width="150">
+                <img alt="SQL" border="1" src="asserts/images/icons/sqlCopy.png" width="150">
+                <br>
+            </section>
+        </section>
+
+        <section>
+            <h2>Desining Software I'm Use</h2>
+            <section>
+                <img alt="illustrator" border="1" src="asserts/images/icons/illustrator.png" width="200">
+                <img alt="photoshop" border="2" src="asserts/images/icons/photoshop.png" width="300">
+            </section>
+
+        </section>
+
+        <section>
+
+        </section>
+
+
+    </section>
+
+    <!--my knowledge progressive bar-->
+    <section>
+        <section></section>
+
+
+    </section>
+    <!--My professional end ---------------------->
+
+<section>
+
+
+
+</section>
+
 
 </main>
 
